@@ -46,7 +46,7 @@ After activating, while still in the admin panel, go to Appearance->Widgets. The
 == Upgrade Notice ==
 
 = 8.10.12 =
-Podcasting functionality added with iTunes-compliant RSS 
+Podcasting functionality added with iTunes-compliant RSS
 
 == Frequently Asked Questions ==
 
