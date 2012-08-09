@@ -4,7 +4,7 @@
   Plugin Name: Monoblog
   Plugin URI:  http://ownthenarrative.com/post/sots--monoblog
   Description: This widget plugin is so that you can record yourself or have someone else read your blog posts aloud (with something like Audacity) and upload it to your site so it can be played in the relevant blog post.
-  Version: 8.9.12
+  Version: 8.10.12
   Author: Justin Kendall
   Author URI: http://OwnTheNarrative.com
  */
