@@ -129,12 +129,12 @@ if (strpos($contentType, "multipart") !== false) {
 if (!$chunks || $chunk == $chunks - 1) {
         $mb = $_GET['mb'];
 	// Strip the temp .part suffix off 
-        if(file_exists(ABSPATH."/wp-content/plugins/monoblog/monoblogs/$mb.mp3")){
-            unlink(ABSPATH."/wp-content/plugins/monoblog/monoblogs/$mb.mp3");
+        if(file_exists(realpath(".")."/monoblogs/$mb.mp3")){
+            unlink(realpath(".")."/monoblogs/$mb.mp3");
             mysql_query("DELETE FROM ".$table_prefix."monoblog WHERE post_id='$mb'");
         }
-	rename("{$filePath}.part", ABSPATH."/wp-content/plugins/monoblog/monoblogs/$mb.mp3");
-        
+	rename("{$filePath}.part", realpath(".")."/monoblogs/$mb.mp3");
+
         $post = mysql_fetch_assoc(mysql_query("SELECT * FROM ".$table_prefix."posts WHERE id=$mb"));
 
         $desc = str_replace(array("\n",'(',')',';',"'","'",":","\r","\t"), '', substr(strip_tags($post['post_content']),0, 100));
@@ -147,8 +147,8 @@ if (!$chunks || $chunk == $chunks - 1) {
         '".ucwords(str_replace("'", '', str_replace('-', ' ', $post['post_title'])))."',
         '".date('Y-m-d')."',
         '$desc',
-        '".get_time(ABSPATH."/wp-content/plugins/monoblog/monoblogs/$mb.mp3")."',
-        '".filesize(ABSPATH."/wp-content/plugins/monoblog/monoblogs/$mb.mp3")."',
+        '".get_time(realpath(".")."/monoblogs/$mb.mp3")."',
+        '".filesize(realpath(".")."/monoblogs/$mb.mp3")."',
         'audio/mpeg3',
         ".date('U')."
             )");
