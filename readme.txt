@@ -13,7 +13,7 @@ Monoblog is a widget plugin that allows recordings of you reading your blogs alo
 
 Combines the awesome functionality of <a href="http://mediaelementjs.com/">MediaElement.js HTML5 media player</a> and <a href='http://www.plupload.com/'>Plupload</a> to enable you or the authors of your site to upload mp3s of people reading the text of your blogs.
 
-Check out <a href="http://ownthenarrative.com/">OwnTheNarrative.com</a> for more information and examples.
+Check out <a href="http://ownthenarrative.com/post/sots--monoblog">OwnTheNarrative.com</a> for more information and examples.
 
 ###  Setup
 
